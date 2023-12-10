@@ -1,2 +1,2 @@
 # udemy_bootcamp
-Udemy Web developer Bootcamp by Colt Steele (Practice)
+Udemy - The Complete Web developer Bootcamp by Colt Steele (Practice)
