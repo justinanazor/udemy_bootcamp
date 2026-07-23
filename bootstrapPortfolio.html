@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Anazor - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background-color: #401f81;
+        color: #ffffff;
+        font-family: "Nunito", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      header {
+        padding: 4rem 0;
+        margin-top: 70px;
+      }
+
+      h1,
+      h2 {
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .bio {
+        padding: 2rem;
+      }
+
+      .profile-img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 20px;
+      }
+
+      .card {
+        overflow: hidden;
+      }
+
+      .card-img-top:hover {
+        cursor: pointer;
+        transform: scale(1.08);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card-text {
+        text-align: start;
+        color: black;
+      }
+
+      .card-title {
+        color: black;
+      }
+
+      .btn-primary {
+        background-color: #542ca5;
+        /* Change to match the background color of the page */
+        border: none;
+        /* Also adjust border color if needed */
+      }
+
+      .btn-warning {
+        font-size: 1.5em;
+        font-weight: bolder;
+        background-color: gold;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #381974;
+        /* Change to a darker shade on hover if desired */
+        border-color: #381974;
+        /* Also adjust border color if needed */
+      }
+
+      .footer {
+        padding: 1rem;
+        background-color: #381974;
+      }
+
+      .navbar {
+        background-color: #401f81;
+        /* Initial background color */
+        transition:
+          background-color 0.5s ease,
+          color 0.5s ease;
+        /* Transition effect */
+      }
+
+      .navbar a {
+        color: #ffffff;
+        /* Initial text color */
+      }
+
+      .nav-link:hover {
+        color: gold;
+      }
+
+      .navbar-scrolled {
+        background-color: #381974;
+        /* Background color when scrolled */
+      }
+
+      .animated {
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      .animated-text {
+        font-size: 1.2em;
+        animation: animateText 5s infinite;
+        /* Animation with a 5-second duration, infinite loop */
+      }
+
+      @keyframes animateText {
+        0% {
+          color: #ffffff;
+        }
+
+        25% {
+          color: gold;
+          /* Change to the desired color at a specific point in the animation */
+        }
+
+        50% {
+          color: #ffffff;
+        }
+
+        75% {
+          color: gold;
+        }
+
+        100% {
+          color: #ffffff;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand animated-text" href="marathonForm.html"
+        >MrAnorahTech</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header>
+      <h1>Justin Anazor</h1>
+      <!-- <h1 class="animate__animated animate__bounce animate__slow 2s animate__infinite	infinite">An animated element
+        </h1> -->
+      <h2 class="animate__animated animate__fadeInDown animate__slow 2s">
+        FULL STACK SOFTWARE DEVELOPER
+      </h2>
+    </header>
+    <div class="container mt-5 bio animated">
+      <img
+        src="images/pic_of_me.jpg"
+        alt="Profile Picture"
+        class="profile-img"
+      />
+      <p>
+        I'm a 3rd-year Software Engineering student at Veritas University, Abuja
+        in Nigeria. Passionate about technology, I aim to apply my
+        problem-solving and technical skills to create standard software
+        solutions. When I'm not coding, you can find me expressing my love for
+        music through singing for hours.
+      </p>
+    </div>
+    <div id="portfolio" class="container mt-5">
+      <h2>Projects</h2>
+      <div class="card-deck">
+        <div class="row">
+          <!-- Add your projects as cards here -->
+          <div class="col-md-4 mb-4">
+            <div
+              class="card animate__animated animate__fadeInUp animate__slow 2s"
+            >
+              <img
+                src="images/binance-nft-marketplace-opensea-nfts.jpeg"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Project 1: NFT Marketplace Integration
+                </h5>
+                <p class="card-text">
+                  Project 1 focuses on the integration of a decentralized NFT
+                  (Non-Fungible Token) marketplace. Leveraging blockchain
+                  technology, the platform provides a secure and transparen...
+                </p>
+                <!-- nment for artists and collectors to engage in
+                                the creation, sale, and purchase of unique digital assets. The smart contract
+                                infrastructure ensures authenticity and ownership, contributing to the evolving
+                                landscape of digital art and collectibles. -->
+                <a href="#" class="btn btn-primary">View Live Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card animate__animated animate__fadeInUp animate__slow 2s"
+            >
+              <img
+                src="images/5809368.jpg"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mobile App UI/UX Development</h5>
+                <p class="card-text">
+                  This Project involves the development of a cutting-edge mobile
+                  application tailored to meet specific user needs. The app
+                  seamlessly combines intuitive user interfaces with robust
+                  functio...
+                </p>
+                <!--  nality, offering a delightful and efficient user
+                                experience. Whether it's enhancing productivity, entertainment, or connectivity, this
+                                mobile app is designed to provide a solution that aligns with modern technological
+                                trends and user expectations, -->
+                <a href="#" class="btn btn-primary">View Live Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div
+              class="card animate__animated animate__fadeInUp animate__slow 5s"
+            >
+              <img
+                src="images/ChrisAnzosonImg.jpg"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Chris Anzoson Intl Ltd: Ecommerce WebApp
+                </h5>
+                <p class="card-text">
+                  Enhancing the sales and supply experience for Japanese motor
+                  vehicles and auto spare parts. Our Ecommerce WebApp seamlessly
+                  blends user-friendly interfaces with powerful fea...
+                </p>
+                <!-- tures, delivering a
+                            tailored solution that caters to modern
+                            business demands. From optimizing transactions to ensuring user satisfaction, this web
+                            application is designed to elevate the efficiency and convenience of Chrisanzoson Intl Ltd's
+                            operations. -->
+                <a href="#" class="btn btn-primary">View Live Demo</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+      <!-- <div class="container"> -->
+      <div class="row">
+        <div class="col-md-12">
+          <a href="#" class="btn btn-warning">View More Projects</a>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div id="about" class="footer mt-4">
+      <p>&copy; 2023 Justin Anazor | Nature & Technology Enthusiast</p>
+    </div>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript for changing navbar background on scroll -->
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("navbar-scrolled", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
